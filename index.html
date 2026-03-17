@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>My Todo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>📝 My Todo List</h1>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Tulis kegiatan kamu...">
+      <button onclick="addTask()">+</button>
+    </div>
+
+    <div class="tabs">
+      <button onclick="setFilter('all')">Semua</button>
+      <button onclick="setFilter('pending')">Belum</button>
+      <button onclick="setFilter('done')">Selesai</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
